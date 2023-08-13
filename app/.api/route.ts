@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 
 //import axios from "axios";
 
@@ -13,3 +13,7 @@ export async function GET() {
 
   return NextResponse.json({ data });
 }
+
+let redirect = (request: any, response: NextResponse) => {
+  return NextResponse.redirect(new URL("/new", request.url));
+};

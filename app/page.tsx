@@ -4,12 +4,10 @@ import styles from "./page.module.css";
 import Script from "next/script";
 
 //
-export default function Home() {
+export default function Home(data: any) {
   return (
     <div>
-      <form>
-        <input name="1" />
-      </form>
+      <h1>Authorization</h1>
     </div>
   );
 }
